@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Feedback Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #4361ee;
+            --gray-100: #f8f9fa;
+            --gray-200: #e9ecef;
+            --gray-600: #495057;
+            --gray-800: #343a40;
+            --gray-900: #212529;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --radius: 8px;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--gray-800);
+            background-color: var(--gray-100);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-weight: 600;
+            font-size: 2.5rem;
+            color: var(--gray-900);
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: var(--gray-600);
+            font-weight: 300;
+            font-size: 1.1rem;
+        }
+        
+        .content-card {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .greeting {
+            margin-bottom: 30px;
+        }
+        
+        .greeting p {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .feedback-list {
+            margin: 25px 0 35px 0;
+            padding-left: 20px;
+        }
+        
+        .feedback-list li {
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            color: var(--gray-800);
+        }
+        
+        .signature {
+            margin-top: 40px;
+            font-style: italic;
+            color: var(--gray-600);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        
+        th, td {
+            border: 1px solid var(--gray-200);
+            padding: 15px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f8fafd;
+            font-weight: 600;
+            color: var(--gray-900);
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9fafc;
+        }
+        
+        tr:hover {
+            background-color: #f1f5ff;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: var(--gray-600);
+            font-size: 0.9rem;
+        }
+        
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .content-card {
+                padding: 25px 20px;
+            }
+            
+            header {
+                margin-bottom: 30px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            th, td {
+                padding: 10px;
+            }
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            
+            .content-card {
+                box-shadow: none;
+            }
+            
+            .footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Assignment Feedback</h1>
+            <p class="subtitle">Professional Evaluation Report</p>
+        </header>
+        
+        <main>
+            <div class="content-card">
+                <div class="greeting">
+                    <p>Hi Pavana,</p>
+                    <p>Nice to meet you!</p>
+                    <p>Please find my feedback on your assignment 2's submission below:</p>
+                </div>
+                
+                <ul class="feedback-list">
+                    <li>Excellent use of visual aids and presentation skills</li>
+                    <li>Good indication of stakeholders and their involvement</li>
+                    <li>Excellent explanation of positive and negative impacts though if done for each identified stakeholder point of view would be more effective</li>
+                    <li>Good use of ethical framework to justifying your position</li>
+                    <li>Good research and referencing</li>
+                    <li>Presentation Duration: 10:31 mins</li>
+                </ul>
+                
+                <p class="signature">Regards,</p>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Criteria</th>
+                                <th>No Pass Less than 50%</th>
+                                <th>Pass 50-59%</th>
+                                <th>Credit 60-69%</th>
+                                <th>Distinction 70-79%</th>
+                                <th>The context and issue are clearly and thoughtfully outlined.</th>
+                                <th>The context and issue are concisely and comprehensively outlined.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Definition and description of context and issue chosen (10%)</td>
+                                <td>Did not meet the criterion.</td>
+                                <td>The context and issue description provides a satisfactory outline but lacks some clarity and specificity.</td>
+                                <td>The context and issue description provide a sound outline.</td>
+                                <td>The context and issue are clearly and thoughtfully outlined.</td>
+                                <td>The context and issue are concisely and comprehensively outlined.</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Impact of positive and negative professional and ethical dimensions on all stakeholders including broader society (40%)</td>
+                                <td>Did not meet the criterion.</td>
+                                <td>Satisfactory argument on the impact and significance of the issue but at a superficial level. The analysis and evaluation provide a level on the potential implications of the issue but are supported by minimal evidence. Lacks clarity, detail or specificity.</td>
+                                <td>Sound argument on the impact and significance of the issue. The analysis and evaluation provide a clear position on the potential implications of the issue and are supported by some evidence, however there is limited clarity, detail or specificity.</td>
+                                <td>Clear and thoughtful argument on the impact and significance of the issue. The analysis and evaluation provide a strong position on the potential implications of the issue and are supported by clear detailed and specific evidence.</td>
+                                <td>Conscious and compelling argument on the impact and significance of the issue with a meaningful and insightful exploration of the ethical dilemmas relating to the topic. Rational,渭南维维的, 10%</td>
+                                <td>Conscious and compelling argument on the impact and significance of the issue with a meaningful and insightful exploration of the ethical dilemmas relating to the topic. Rational,渭南维维的, 10%</td>
+                            </tr>
+                            <tr>
+                                <td>A convincing argument and rationale for the stated position on the chosen issue (40%)</td>
+                                <td>Did not meet the criterion.</td>
+                                <td>The analysis and evaluation provide a basic argument and rationale for your position. The analysis and evaluation are supported by some evidence. Lacks some clarity, detail or specificity.</td>
+                                <td>The analysis and evaluation provide a sound argument and rationale for your position. The analysis and evaluation are supported by some evidence, however there is limited clarity, detail or specificity.</td>
+                                <td>The analysis and evaluation provide a strong argument and rationale for your position. The analysis and evaluation are supported by clear detailed, relevant and specific evidence.</td>
+                                <td>The analysis and evaluation provide a strong argument and rationale for your position. The analysis and evaluation are supported by clear, very detailed, highly relevant and specific evidence.</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Video presentation</td>
+                                <td>Did not meet the criterion.</td>
+                                <td>Generally understandable presentation with a somewhat clear structure including a basic introduction and conclusion.</td>
+                                <td>Uses somewhat clear and mostly relevant language. Clearly structured including an acceptable introduction and conclusion.</td>
+                                <td>Uses clear and relevant language. Clearly structured including a well-thought-out introduction.</td>
+                                <td>Uses clearly and highly relevant language. Cohensively structured, including a well-thought-out introduction.</td>
+                                <td>Has clear and highly relevant language. Cohensively structured, including a well-thought-out introduction.</td>
+                            </tr>
+                            <tr>
+                                <td>Presentation is engaging and innovative for the intended audience, clear, engages the audience and generates enthusiasm.</td>
+                                <td>Did not meet the criterion.</td>
+                                <td>Generally accurate spelling and grammar but has some errors.</td>
+                                <td>Uses somewhat clear and mostly relevant language. Clearly structured including an acceptable introduction and conclusion.</td>
+                                <td>Uses clear and thoughtfully presented. Accurate spelling and grammar with a few errors.</td>
+                                <td>Uses clearly and thoughtfully presented. Accurate spelling and grammar with little to no errors.</td>
+                                <td>Uses clearly and thoughtfully presented. Accurate spelling and grammar with little to no errors.</td>
+                            </tr>
+                            <tr>
+                                <td>Correct referencing, grammar and spelling (10%)</td>
+                                <td>Did not meet the criterion.</td>
+                                <td>Visually appealing with speaker visible. No innovation was shown.</td>
+                                <td>Visually appealing with speaker visible. Considered audience needs and engagement, generates enthusiasm. Displays creativity but falls short of groundbreaking innovation.</td>
+                                <td>Maximised audience engagement, attempting to establish a personal connection. Generating an interest and enthusiasm about the topic in others. Innovative approach to getting content across.</td>
+                                <td>Maximised audience engagement, establishing a personal connection, generating a strong interest showcases exceptional creativity and introduces novel approaches ground breaking ideas.</td>
+                                <td>Maximised audience engagement, establishing a personal connection, and generating a strong interest showcases exceptional creativity and introduces novel approaches ground breaking ideas.</td>
+                            </tr>
+                            <tr>
+                                <td>Correct referencing, grammar and spelling (10%)</td>
+                                <td>Did not meet the criterion.</td>
+                                <td>Visually appealing with speaker visible. No innovation was shown.</td>
+                                <td>Visually appealing with speaker visible. Considered audience needs and engagement, generates enthusiasm. Displays creativity but falls short of groundbreaking innovation.</td>
+                                <td>Correct APA referencing.</td>
+                                <td>Correct APA referencing.</td>
+                                <td>Correct APA referencing.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            Powered by <a href="https://github.com/PaddlePaddle/PaddleOCR" target="_blank">PaddleOCR-VL</a> and <a href="https://huggingface.co/BAIDU" target="_blank">ERNIE</a>
+        </footer>
+    </div>
+</body>
+</html>
